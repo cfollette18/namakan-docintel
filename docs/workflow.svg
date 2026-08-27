@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="250" viewBox="0 0 920 250" role="img">
+  <rect width="920" height="250" rx="18" fill="#F4F6F8"/>
+  
+  <text x="28" y="36" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1B3139">Full AI workflow (agents, out of the box)</text>
+  <text x="28" y="56" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="12" fill="#5C6B75">rag-engineer extracts. customer-excellence never sees raw low-confidence fields in ERP.</text>
+
+  <g>
+    <rect x="28" y="88" width="148" height="118" rx="14" fill="#FFFFFF" stroke="#D5DDE3" stroke-width="1.5"/>
+    <circle cx="102.0" cy="126" r="18" fill="#1B3139"/>
+    <g transform="translate(102.0,126)"><path d="M-6 -10 H2 L8 -4 V10 H-6 Z" fill="none" stroke="white" stroke-width="2"/><path d="M2 -10 V-4 H8" fill="none" stroke="white" stroke-width="2"/></g>
+    <text x="102.0" y="178" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1B3139">Invoice / PO / RFQ</text>
+    <text x="102.0" y="194" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#5C6B75">text or PDF</text>
+  </g>
+
+  <line x1="176" y1="140" x2="190" y2="140" stroke="#9AA7B2" stroke-width="2"/>
+  <polygon points="198,140 190,136 190,144" fill="#9AA7B2"/>
+
+  <g>
+    <rect x="198" y="88" width="148" height="118" rx="14" fill="#FFFFFF" stroke="#D5DDE3" stroke-width="1.5"/>
+    <circle cx="272.0" cy="126" r="18" fill="#0D9488"/>
+    <g transform="translate(272.0,126)"><rect x="-8" y="-8" width="16" height="16" rx="2" fill="none" stroke="white" stroke-width="2"/><path d="M-8 0 H8" stroke="white" stroke-width="2"/></g>
+    <text x="272.0" y="178" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1B3139">Guard scan</text>
+    <text x="272.0" y="194" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#5C6B75">optional</text>
+  </g>
+
+  <line x1="346" y1="140" x2="360" y2="140" stroke="#9AA7B2" stroke-width="2"/>
+  <polygon points="368,140 360,136 360,144" fill="#9AA7B2"/>
+
+  <g>
+    <rect x="368" y="88" width="148" height="118" rx="14" fill="#FFFFFF" stroke="#D5DDE3" stroke-width="1.5"/>
+    <circle cx="442.0" cy="126" r="18" fill="#0D9488"/>
+    <g transform="translate(442.0,126)"><rect x="-8" y="-8" width="16" height="6" rx="1" fill="none" stroke="white" stroke-width="2"/><rect x="-8" y="2" width="7" height="6" rx="1" fill="none" stroke="white" stroke-width="2"/><rect x="1" y="2" width="7" height="6" rx="1" fill="none" stroke="white" stroke-width="2"/><path d="M0 -2 V2 M-4 2 V2" stroke="white" stroke-width="2"/></g>
+    <text x="442.0" y="178" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1B3139">Validate</text>
+    <text x="442.0" y="194" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#5C6B75">required fields</text>
+  </g>
+
+  <line x1="516" y1="140" x2="530" y2="140" stroke="#9AA7B2" stroke-width="2"/>
+  <polygon points="538,140 530,136 530,144" fill="#9AA7B2"/>
+
+  <g>
+    <rect x="538" y="88" width="148" height="118" rx="14" fill="#FFFFFF" stroke="#D5DDE3" stroke-width="1.5"/>
+    <circle cx="612.0" cy="126" r="18" fill="#FF3621"/>
+    <g transform="translate(612.0,126)"><circle cx="0" cy="-2" r="6" fill="none" stroke="white" stroke-width="2"/><path d="M-3 -2 L-1 0 L4 -5" fill="none" stroke="white" stroke-width="2"/><path d="M-6 8 H6" stroke="white" stroke-width="2"/></g>
+    <text x="612.0" y="178" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1B3139">Human queue</text>
+    <text x="612.0" y="194" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#5C6B75">weak fields</text>
+  </g>
+
+  <line x1="686" y1="140" x2="700" y2="140" stroke="#9AA7B2" stroke-width="2"/>
+  <polygon points="708,140 700,136 700,144" fill="#9AA7B2"/>
+
+  <g>
+    <rect x="708" y="88" width="148" height="118" rx="14" fill="#FFFFFF" stroke="#D5DDE3" stroke-width="1.5"/>
+    <circle cx="782.0" cy="126" r="18" fill="#0D9488"/>
+    <g transform="translate(782.0,126)"><ellipse cx="0" cy="-6" rx="9" ry="4" fill="none" stroke="white" stroke-width="2"/><path d="M-9 -6 V6 C-9 9 9 9 9 6 V-6" fill="none" stroke="white" stroke-width="2"/></g>
+    <text x="782.0" y="178" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1B3139">JSON / SQL</text>
+    <text x="782.0" y="194" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#5C6B75">ERP-ready</text>
+  </g>
+</svg>

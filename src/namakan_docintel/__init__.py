@@ -13,7 +13,7 @@ from namakan_docintel.schema import (
     validate,
 )
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 __all__ = [
     "ExtractedDoc",
     "INVOICE_SCHEMA",

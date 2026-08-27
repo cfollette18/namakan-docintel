@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "namakan-docintel"
-version = "0.2.0"
+version = "0.3.0"
 description = "Document intelligence: schema validation, confidence scoring, review queue."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -13,10 +13,10 @@ authors = [{ name = "Namakan AI Engineering" }]
 dependencies = []
 
 [project.scripts]
-namakan-docintel = "namakan_docintel.cli:main"
+namakan-docintel = "namakan_docintel.server:main"
 
 [project.optional-dependencies]
-guardrails = ["namakan-guardrails>=0.1.0"]
+guardrails = ["namakan-guardrails @ git+https://github.com/cfollette18/namakan-guardrails.git"]
 dev = ["pytest>=8"]
 
 [project.urls]
@@ -24,3 +24,6 @@ Homepage = "https://github.com/cfollette18/namakan-docintel"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

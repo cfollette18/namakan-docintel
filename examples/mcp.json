@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "namakan-docintel": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/cfollette18/namakan-docintel.git",
+        "namakan-docintel",
+        "serve"
+      ]
+    }
+  }
+}
