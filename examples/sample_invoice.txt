@@ -1,0 +1,8 @@
+INVOICE
+Vendor: Example Fasteners LLC
+Invoice number: INV-1001
+Invoice date: 2026-03-14
+PO number: PO-1001
+Subtotal: 250.00
+Tax: 0.00
+Total: 250.00

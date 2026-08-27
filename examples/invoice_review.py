@@ -1,19 +1,11 @@
 """Generic invoice extract + review queue. Synthetic data only."""
 
-from namakan_docintel import ReviewQueue, extract
+from namakan_docintel import ReviewQueue, extract, parse_invoice, to_sql_inserts
 
-
-def parser(text: str) -> dict:
-    return {
-        "vendor_name": "Example Fasteners LLC",
-        "invoice_number": "INV-1001",
-        "total": 250.0,
-        "po_number": "unknown",
-    }
-
-
-doc = extract("synthetic invoice text", parser)
+text = open("examples/sample_invoice.txt", encoding="utf-8").read()
+doc = extract(text, parse_invoice)
 queue = ReviewQueue()
 queue.enqueue("syn-1", doc)
+print("fields:", doc.fields)
 print("needs review:", doc.needs_review)
-print("json row:", queue.to_json_rows([doc])[0])
+print(to_sql_inserts(queue.to_json_rows([doc])))

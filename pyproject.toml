@@ -4,13 +4,16 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "namakan-docintel"
-version = "0.1.0"
+version = "0.2.0"
 description = "Document intelligence: schema validation, confidence scoring, review queue."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{ name = "Namakan AI Engineering" }]
 dependencies = []
+
+[project.scripts]
+namakan-docintel = "namakan_docintel.cli:main"
 
 [project.optional-dependencies]
 guardrails = ["namakan-guardrails>=0.1.0"]

@@ -1,0 +1,7 @@
+PURCHASE ORDER
+Buyer: Example Manufacturing LLC
+Vendor: Example Fasteners LLC
+PO number: PO-1001
+Order date: 2026-03-02
+Promise date: 2026-03-20
+Total: 250.00

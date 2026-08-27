@@ -1,15 +1,6 @@
-from namakan_docintel import INVOICE_SCHEMA, ReviewQueue, extract, validate
-from namakan_docintel.schema import ValidationError
-
-
-def parser(text: str) -> dict:
-    # Toy parser for tests — production uses a vision LLM behind namakan-guardrails.
-    return {
-        "vendor_name": "Northwoods Fasteners LLC",
-        "invoice_number": "INV-10482",
-        "total": 13739.00,
-        "po_number": "unknown",
-    }
+from namakan_docintel import extract, parse_invoice, parse_purchase_order
+from namakan_docintel.cli import main
+from namakan_docintel.schema import INVOICE_SCHEMA, ValidationError, validate
 
 
 def test_schema_requires_total():
@@ -20,12 +11,17 @@ def test_schema_requires_total():
         pass
 
 
-def test_extract_queues_low_confidence():
-    doc = extract("invoice text", parser)
-    assert "po_number" in doc.needs_review
-    q = ReviewQueue()
-    item = q.enqueue("doc-1", doc)
-    assert item is not None
-    fields = q.resolve("doc-1", {"po_number": "PO-7781"})
-    assert fields["po_number"] == "PO-7781"
-    assert q.to_json_rows([doc])[0]["vendor_name"]
+def test_heuristic_invoice():
+    text = "Vendor: Acme\nInvoice number: INV-9\nTotal: 12.50\nPO number: PO-1\n"
+    doc = extract(text, parse_invoice)
+    assert doc.fields["invoice_number"] == "INV-9"
+    assert doc.fields["total"] == 12.5
+
+
+def test_po_parser():
+    text = "Buyer: Plant A\nVendor: Steel Co\nPO number: PO-88\n"
+    assert parse_purchase_order(text)["po_number"] == "PO-88"
+
+
+def test_demo_cli():
+    assert main(["demo"]) == 0

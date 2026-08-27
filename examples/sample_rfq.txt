@@ -1,0 +1,6 @@
+RFQ
+From: Example Manufacturing LLC — Purchasing
+RFQ number: RFQ-226-14
+Due date: 2026-04-01
+Part: Die-cut gasket, 2mm NBR
+Qty breaks: 100 500 1000
